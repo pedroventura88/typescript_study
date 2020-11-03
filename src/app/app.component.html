@@ -1,4 +1,2 @@
 <app-header></app-header>
-<app-student [student]="luke"></app-student>
-<app-student [student]="hanSolo"></app-student>
-<app-student [student]="lea"></app-student>
+<app-student *ngFor="let student of students" [student]="student" ></app-student>
