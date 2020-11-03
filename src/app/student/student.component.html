@@ -1,7 +1,8 @@
 <div *ngIf="student">
-  Student: {{student?.name}}
+  Student: <a href="#" (click)="clickedBtn()">{{student?.name}}</a>
   <div *ngIf="student?.isJedi">
-    Jedi Temple: {{student?.temple}}
+    Jedi Temple: {{student?.temple}} <button (click)="zezin.focus()">Focus!</button>
+    <textarea #zezin ></textarea> <!-- its possible to use atributes from text area, using these "#" -->
   </div>
 </div>
 <p *ngIf="!student">

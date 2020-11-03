@@ -16,4 +16,8 @@ export class StudentComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  // tslint:disable-next-line:typedef
+  clickedBtn() {
+    console.log('Student: ' + this.student.name);
+  }
 }
