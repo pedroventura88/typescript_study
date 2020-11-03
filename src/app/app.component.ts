@@ -6,5 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'First inclusion of fucking angular code ! KRALHO';
+  luke = {name: 'Luke', isJedi: true, temple: 'Coruscant'};
+  hanSolo = {name: 'Han Solo', isJedi: false};
+  lea = {name: 'Lea', isJedi: false};
 }
